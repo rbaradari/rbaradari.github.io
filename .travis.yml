@@ -1,0 +1,11 @@
+language: generic
+deploy:
+  - provider: pages
+    github-token: $GITHUB_TOKEN
+    committer-from-gh: true
+    skip-cleanup: true
+    keep-history: true
+    local-dir: dist
+    target-branch: master
+    on:
+      branch: develop
