@@ -1,4 +1,22 @@
-language: generic
+language: node_js
+
+dist: xenial
+sudo: false
+
+node_js:
+  - "10.15.0"
+
+cache: npm
+
+addons:
+  chrome: stable
+
+script:
+  - npm run lint
+  - npm run test:headless
+  - xvfb-run npm run e2e
+  - npm run build:release
+
 deploy:
   - provider: pages
     github-token: $GITHUB_TOKEN
