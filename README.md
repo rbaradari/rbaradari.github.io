@@ -1,4 +1,6 @@
-# Rbaradari
+![CI](https://github.com/rbaradari/rbaradari.github.io/workflows/CI/badge.svg?branch=develop)
+
+# rbaradari.github.io
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
 
