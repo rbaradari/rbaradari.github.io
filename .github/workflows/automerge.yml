@@ -29,12 +29,12 @@ jobs:
         uses: pascalgn/automerge-action@v0.8.0
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          MERGE_LABELS: "automerge,!wip,!work in progress"
+          MERGE_LABELS: "automerge,!work in progress"
           MERGE_METHOD: "merge"
           MERGE_DELETE_BRANCH: "true"
           MERGE_COMMIT_MESSAGE: "automatic"
           MERGE_FORKS: "false"
           MERGE_RETRIES: "10"
           MERGE_RETRY_SLEEP: "30000"
-          UPDATE_LABELS: "automerge,!wip,!work in progress"
+          UPDATE_LABELS: "--feature-disabled--"
           UPDATE_METHOD: "rebase"
