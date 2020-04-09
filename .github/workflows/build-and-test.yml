@@ -61,12 +61,10 @@ jobs:
 
     - name: Run tests 🧪
       run: npm run test:headless
-    - name: Run e2e 🧪
-      uses: GabrielBB/xvfb-action@v1.0
-      with:
-        run: |
-          npx webdriver-manager update --versions.chrome=81
-          npx ng e2e --webdriver-update false          
+#    - name: Run e2e 🧪
+#      uses: GabrielBB/xvfb-action@v1.0
+#      with:
+#        run: npm run e2e
 
     - name: Run linting 🔎
       run: npm run lint
