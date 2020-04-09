@@ -1,9 +1,10 @@
 name: "Update Angular Action"
 
 on:
-  push
+  push:
+    branches: [ develop ]
   schedule:
-      - cron:  '0 0 * * *'
+      - cron:  "0 0 * * *"
 
 jobs:
 
