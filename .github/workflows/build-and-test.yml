@@ -64,7 +64,9 @@ jobs:
     - name: Run e2e 🧪
       uses: GabrielBB/xvfb-action@v1.0
       with:
-        run: npm run e2e
+        run: |
+          npx webdriver-manager update --versions.chrome=81
+          npx ng e2e --webdriver-update false          
 
     - name: Run linting 🔎
       run: npm run lint
