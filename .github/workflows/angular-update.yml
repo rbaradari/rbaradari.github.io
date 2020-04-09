@@ -1,8 +1,6 @@
 name: "Update Angular Action"
 
 on:
-  push:
-    branches: [ develop ]
   schedule:
       - cron:  "0 0 * * *"
 
@@ -10,7 +8,14 @@ jobs:
 
   angular-update-check:
     runs-on: ubuntu-latest
+    
     steps:
+
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          ref: develop
+
       - name: Updating ng dependencies 🔦
         uses: tinesoft/ngx-uptodate@v1.1.0
         with:
