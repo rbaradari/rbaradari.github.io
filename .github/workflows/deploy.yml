@@ -1,4 +1,4 @@
-name: deploy-to-master
+name: "Deploy Github Pages"
 
 on:
   push:
