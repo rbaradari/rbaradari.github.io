@@ -17,7 +17,7 @@ jobs:
           ref: develop
 
       - name: Updating ng dependencies 🔦
-        uses: tinesoft/ngx-uptodate@v1.1.0
+        uses: tinesoft/ngx-uptodate@v1.1.1
         with:
           repo-token: ${{ secrets.REPO_SCOPED_TOKEN }}
           base-branch: develop
